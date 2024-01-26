@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000; /*#659292a6;*/
+    font-family: fantasy;
+}
+
+.title {
+    color: #fff;
+    font-family: fantasy;
+    position: absolute;
+    left: calc(50% - 58.5px);
+    z-index: +1;
+    padding-top: 10px;
+}
+
+#options {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    padding: 12px;
+}
+
+.menu {
+    display: inline;
+}
+
+.menu select {
+    background: none;
+    color: white;
+    border: none;
+    font-family: fantasy;
+    font-size: 16px;
+}
+
+#time .start,
+#time .previous,
+#time .next,
+#time .end {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    #options {
+        bottom: 0;
+    }
+}

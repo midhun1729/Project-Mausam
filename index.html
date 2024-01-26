@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Mausam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/topojson-client"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+    <script src="https://unpkg.com/d3"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./data/country-codes.js"></script>
+</head>
+<body>
+    <h1 class="title"><center>Mausam</center></h1>
+    <div id="options">
+        <div id="data-type">
+            <span>Data type:</span>
+            <div class="menu">
+                <select>
+                    <option value="tavg">TAVG</option>
+                    <option value="prcp">PRCP</option>
+                    <option value="snow">SNOW</option>
+                    <option value="awnd">WIND</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="time">
+            <span>Year:</span>
+            <span class="start"><<</span>
+            <span class="previous"><</span>
+            <span data-year="2022" id="curr-year">2022</span>
+            <span class="next">></span>
+            <span class="end">>></span>
+        </div>
+    </div>
+    <div id="earth"></div>
+
+    <script src="./main.js"></script>
+    <script src="./utils.js"></script>
+</body>
